@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e2c58, #4f4ba1);
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+ #exercicios {
+    background-color: white;
+
+    width: 900px;
+    height: 1200;
+    padding: 70px;
+
+    border-radius: 30px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+h1{ color: rgb(2, 38, 68);
+text-align: center;
+}
+button{
+    padding: 25px 45px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background-color: #312e81;
+
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
