@@ -48,6 +48,26 @@ if (idade >= 50) {
 
 }
 }
-function exe4(){
-    
+function exe4(){ 
+
+}
+function exe5(){
+    var n1= Number(prompt("digite um numero"))
+    var resposta= document.getElementById("resposta5")
+    if(n1%2==0){
+        resposta.innerText=("seu numero é par")
+    }else{
+        resposta.innerText=("seu numero é impar")
+    }
+}
+function exe6(){
+    let pergunta = prompt("qual seu nome?")
+    let p2 = prompt("Voce prefere Messi ou Ronaldo?")
+    let p3 = prompt("Voce prefere real ou Barça?")
+    let resposta= Document.getElementById("resposta5")
+    let botao = Document.getElementById("btn6")
+    if(p2=="Messi" || p3== "Barça"){
+        resposta.innerText(`${pergunta} Voce é inteligente`)
+    }
+     botao.innerHTML = '<img src="https://revistaquem.globo.com/QUEM-News/noticia/2013/05/awn-lionel-messi-leva-filho-na-entrega-da-taca-de-campeao.html" width="20" alt="Ícone">';
 }
