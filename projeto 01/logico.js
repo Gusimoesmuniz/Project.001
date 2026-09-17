@@ -60,14 +60,31 @@ function exe5(){
         resposta.innerText=("seu numero é impar")
     }
 }
-function exe6(){
-    let pergunta = prompt("qual seu nome?")
-    let p2 = prompt("Voce prefere Messi ou Ronaldo?")
-    let p3 = prompt("Voce prefere real ou Barça?")
-    let resposta= Document.getElementById("resposta5")
-    let botao = Document.getElementById("btn6")
-    if(p2=="Messi" || p3== "Barça"){
-        resposta.innerText(`${pergunta} Voce é inteligente`)
-    }
-     botao.innerHTML = '<img src="https://revistaquem.globo.com/QUEM-News/noticia/2013/05/awn-lionel-messi-leva-filho-na-entrega-da-taca-de-campeao.html" width="20" alt="Ícone">';
+function exe6() {
+    let pergunta = prompt("Qual seu nome?");
+
+    let p2 = prompt("Você prefere Messi ou Ronaldo?")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+    let p3 = prompt("Você prefere Real ou Barça?")
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+
+    let resposta = document.getElementById("resposta6");
+    let botao = document.getElementById("bnt6");
+    if (p2 == "messi" && p3 == "barca") {
+    resposta.innerText = `${pergunta} você é inteligente`;
+
+    botao.innerHTML =
+        '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFZrqQIrFzwwZ7zPICRF6y7y4Lcmkf8jSB3DMHu0VeAyBuO_kOvlMn3wtQ&s=10" width="90" alt="Ícone">';
+} else if (p2 == "" || p3 == "") {
+    resposta.innerText = "Tente novamente!";
+} else {
+    resposta.innerText = `${pergunta} você é imbecil`;
+     botao.innerHTML =
+        '<img src="https://i.redd.it/ekizj5pwugj71.jpg" width="90" alt="Ícone">';
+}
 }
