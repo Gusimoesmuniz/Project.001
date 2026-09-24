@@ -49,7 +49,19 @@ if (idade >= 50) {
 }
 }
 function exe4(){ 
-
+    let data= new Date()
+    let hora = data.getHours()
+    let resposta= document.getElementById('resposta4')
+    if(hora==23 || hora<=5){
+        resposta.innerText=`Bela madrugada são ${hora}`
+    }else if(hora>=6 && hora <=11){
+        resposta.innerText=`Bom Dia são ${hora}`
+    }else if(hora>=12 && hora <=18){
+        resposta.innerText=`Boa tarde são ${hora}`
+}
+    else if(hora>=19 && hora <=22){
+        resposta.innerText=`Boa noite são ${hora}`
+}
 }
 function exe5(){
     var n1= Number(prompt("digite um numero"))
@@ -87,4 +99,7 @@ function exe6() {
      botao.innerHTML =
         '<img src="https://i.redd.it/ekizj5pwugj71.jpg" width="90" alt="Ícone">';
 }
+}
+function exe7 (){
+
 }

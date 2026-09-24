@@ -43,6 +43,10 @@ button {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
     transition: all 0.3s ease;
 }
+p{
+    color: aliceblue;
+    font-family: Franklin Gothic Medium;
+}
 
 button:hover {
     background: linear-gradient(135deg, #4338ca, #6366f1);
